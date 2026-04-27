@@ -138,6 +138,17 @@ main > section{
     box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.28);
     margin-bottom: 20px;
 }
+#exp-badge{
+    padding: 40px 45px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: -100px;
+    margin-top: -100px;
+}
+#exp-year{
+    font-size: 4rem;
+    font-weight: 600;
+}
 
 /* some fact related style */
 
@@ -189,11 +200,25 @@ main > section{
     filter: grayscale(90%)
 }
 
+/* footer */
+
+footer{
+  max-width: 1440px;
+  background-color: #d8cec3;
+  margin: 100px auto;      
+  padding: 2px;       
+  min-height: 16px;
+}
+.footer-txt{
+    padding: 40px 400px;
+}
+
 /* responsive media query for phone*/
 @media screen and (max-width: 576px) {
     .navbar,
     .nav-links,
-    .teams{
+    .teams,
+    .feature-sec{
         flex-direction: column;
     }
 
@@ -202,8 +227,8 @@ main > section{
     .sponsor-companies{
         grid-template-columns: repeat(1, 1fr);
     }
-
-    .section-tittle, .fact-dis{
+    .section-tittle,
+    .fact-dis{
         max-width: 396px;
         text-align: center;
     }
@@ -218,6 +243,25 @@ main > section{
     .our-feature{
         margin-left: 20px;
     }
+    .feature-img img{
+        width: 100%;
+    }
+    #exp-badge{
+        margin-top: 20px;
+        margin-left: 6px;
+    }
+    footer {
+    max-width: 300px;
+    background-color: rgb(216, 206, 195);
+    margin: 20px auto;
+    padding: 2px;
+    height: 73px;
+    .footer-txt{
+        padding: 4px 10px;
+        font-size: 13px;
+        text-align: center;
+    }
+}
 }
 
 /* responsive for tablet or medium devices */
